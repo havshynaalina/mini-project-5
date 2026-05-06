@@ -66,7 +66,10 @@ body {
     margin-top: 12px;
 }
 
-/* FILTERS */
+.title {
+    font-size: 50px;
+}
+
 .filters {
     display: flex;
     gap: 10px;
@@ -90,7 +93,6 @@ body {
     color: #fff;
 }
 
-/* GRID */
 .catalog {
     padding: 0 clamp(16px, 4vw, 40px) 60px;
 }
@@ -101,7 +103,6 @@ body {
     gap: 24px;
 }
 
-/* CARD */
 .card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -114,7 +115,6 @@ body {
     transform: translateY(-6px);
 }
 
-/* POSTER */
 .card-poster {
     position: relative;
     aspect-ratio: 2/3;
@@ -138,7 +138,6 @@ body {
     object-fit: cover;
 }
 
-/* OVERLAY */
 .card-overlay {
     position: absolute;
     inset: 0;
@@ -162,7 +161,6 @@ body {
     cursor: pointer;
 }
 
-/* RATING */
 .card-rating {
     position: absolute;
     top: 10px;
@@ -172,7 +170,6 @@ body {
     border-radius: 6px;
 }
 
-/* BODY */
 .card-body {
     padding: 14px;
 }
