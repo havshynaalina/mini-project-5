@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">Kupp<span class="word">Kist</span></h1>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#catalog">Каталог</a></li>
+                <li><a href="#">Моя колекція</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <h2>Моя <span class="word">колекція</span></h2>
+            <p class="subtitle">
+                Відкрий для себе фільми, які справді варто подивитися — обирай жанр і досліджуй деталі.
+            </p>
+        </section>
+
+        <section class="filters">
+            <button class="filter-btn active">Всі</button>
+            <button class="filter-btn">Бойовик</button>
+            <button class="filter-btn">Драма</button>
+            <button class="filter-btn">Фантастика</button>
+            <button class="filter-btn">Комедія</button>
+        </section>
+
+        <section class="catalog" id="catalog">
+            <article class="catalog-grid">
+            <article class="card">
+            
+                <div class="card-poster">
+                    <div class="poster-placeholder"><img src="img/The Last Horizon.jpg" alt="The Last Horizon"></div>
+            
+                    <div class="card-overlay">
+                        <button class="overlay-btn" data-modal-open="modal1">Детальніше</button>
+                    </div>
+            
+                    <div class="card-rating">⭐ 8.5</div>
+                </div>
+            
+                <div class="card-body">
+                    <div class="card-genre">Драма</div>
+                    <div class="card-title">The Last Horizon</div>
+                    <div class="card-year">2021</div>
+                </div>
+            </article>
+            
+
+            <div class="backdrop" data-modal="modal1">
+                <div class="modal">
+                    <button class="modal-close" data-modal-close>&times;</button>
+            
+                    <h2 class="modal-title">The Last Horizon</h2>
+            
+                    <p class="modal-text">
+                        A dramatic story about human resilience in a collapsing future world.
+                        The film explores survival, loss, and the meaning of hope when everything is falling apart.
+                    </p>
+            
+                    <p class="modal-text">
+                        The main character is forced to make impossible choices that redefine morality and identity.
+                    </p>
+            
+                    <button class="modal-btn" data-modal-close>
+                        Return
+                    </button>
+                </div>
+            </div>
+
+        <article class="card">
+        
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Weekend Chaos.jpg" alt="Weekend Chaos"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal2">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 7.9</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Комедія</div>
+                <div class="card-title">Weekend Chaos</div>
+                <div class="card-year">2020</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal2">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Weekend Chaos</h2>
+        
+                <p class="modal-text">
+                    A light comedy about a group of friends whose weekend plans turn into complete chaos.
+                </p>
+        
+                <p class="modal-text">
+                    Unexpected situations force them to rethink their relationships and priorities.
+                </p>
+        
+                <button class="modal-btn" data-modal-close>
+                    Return
+                </button>
+            </div>
+        </div>
+
+        <article class="card">
+        
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Neon Galaxy.jpg" alt="Neon Galaxy"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal3">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 8.2</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Фантастика</div>
+                <div class="card-title">Neon Galaxy</div>
+                <div class="card-year">2023</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal3">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Neon Galaxy</h2>
+        
+                <p class="modal-text">
+                    A sci-fi journey through a neon-lit galaxy ruled by artificial intelligence.
+                </p>
+        
+                <p class="modal-text">
+                    Humanity struggles to survive while discovering secrets about its own origin.
+                </p>
+        
+                <button class="modal-btn" data-modal-close>
+                    Return
+                </button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Dark Whisper.jpg" alt="Dark Whisper"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal4">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 6.8</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Жахи</div>
+                <div class="card-title">Dark Whisper</div>
+                <div class="card-year">2019</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal4">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Dark Whisper</h2>
+                <p class="modal-text">A psychological horror about voices that appear in complete silence.</p>
+                <p class="modal-text">The main character slowly loses the ability to distinguish reality from hallucination.</p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Steel Justice.jpg" alt="Steel Justice"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal5">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 9.0</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Бойовик</div>
+                <div class="card-title">Steel Justice</div>
+                <div class="card-year">2022</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal5">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Steel Justice</h2>
+                <p class="modal-text">An elite soldier fights corruption inside a collapsing city system.</p>
+                <p class="modal-text">Every mission brings him closer to uncovering a global conspiracy.</p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Silent Roads.jpg" alt="Silent Roads"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal6">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 7.5</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Драма</div>
+                <div class="card-title">Silent Roads</div>
+                <div class="card-year">2018</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal6">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Silent Roads</h2>
+                <p class="modal-text">A road movie about two strangers escaping their past.</p>
+                <p class="modal-text">Their journey becomes a reflection of guilt, forgiveness, and identity.</p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Orbit Zero.jpg" alt="Orbit Zero"></div>
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal7">Детальніше</button>
+                </div>
+                <div class="card-rating">⭐ 8.1</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Фантастика</div>
+                <div class="card-title">Orbit Zero</div>
+                <div class="card-year">2024</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal7">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Orbit Zero</h2>
+                <p class="modal-text">A mission to the edge of space reveals unknown cosmic signals.</p>
+                <p class="modal-text">The crew discovers something that challenges human understanding of reality.</p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Office Escape.jpg" alt="Office Escape"></div>
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal8">Детальніше</button>
+                </div>
+                <div class="card-rating">⭐ 7.0</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Комедія</div>
+                <div class="card-title">Office Escape</div>
+                <div class="card-year">2021</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal8">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Office Escape</h2>
+                <p class="modal-text">A group of coworkers accidentally lock themselves inside the office.</p>
+                <p class="modal-text">What starts as frustration turns into chaos and unexpected friendship.</p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Broken Lines.jpg" alt="Broken Lines"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal9">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 8.7</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Драма</div>
+                <div class="card-title">Broken Lines</div>
+                <div class="card-year">2020</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal9">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Broken Lines</h2>
+                <p class="modal-text">
+                    A story about people whose lives intersect in unexpected and painful ways.
+                </p>
+                <p class="modal-text">
+                    Each decision creates consequences that cannot be undone.
+                </p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Night Signal.jpg" alt="Night Signal"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal10">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 6.9</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Жахи</div>
+                <div class="card-title">Night Signal</div>
+                <div class="card-year">2017</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal10">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Night Signal</h2>
+                <p class="modal-text">
+                    A mysterious radio signal begins broadcasting every night at exactly 3:33 AM.
+                </p>
+                <p class="modal-text">
+                    Those who listen start experiencing strange visions.
+                </p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Iron Pulse.jpg" alt="Iron Pulse"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal11">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 8.3</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Бойовик</div>
+                <div class="card-title">Iron Pulse</div>
+                <div class="card-year">2022</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal11">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Iron Pulse</h2>
+                <p class="modal-text">
+                    A cyber-enhanced fighter enters underground combat arenas.
+                </p>
+                <p class="modal-text">
+                    Every fight pushes him closer to uncovering who controls the system.
+                </p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+
+        <article class="card">
+            <div class="card-poster">
+                <div class="poster-placeholder"><img src="img/Funny Business.jpg" alt="Funny Business"></div>
+        
+                <div class="card-overlay">
+                    <button class="overlay-btn" data-modal-open="modal12">Детальніше</button>
+                </div>
+        
+                <div class="card-rating">⭐ 7.4</div>
+            </div>
+        
+            <div class="card-body">
+                <div class="card-genre">Комедія</div>
+                <div class="card-title">Funny Business</div>
+                <div class="card-year">2019</div>
+            </div>
+        </article>
+        
+        <div class="backdrop" data-modal="modal12">
+            <div class="modal">
+                <button class="modal-close" data-modal-close>&times;</button>
+        
+                <h2 class="modal-title">Funny Business</h2>
+                <p class="modal-text">
+                    A startup team tries to survive chaotic investors and even more chaotic ideas.
+                </p>
+                <p class="modal-text">
+                    Success becomes less important than surviving each day.
+                </p>
+        
+                <button class="modal-btn" data-modal-close>Return</button>
+            </div>
+        </div>
+           
+    </main>        
+
+    <footer class="footer" id="contact">
+        <div class="footer-brand">
+            <h2 class="logo">Kupp<span class="word">Kist</span></h2>
+            <p>Знайди фільм до смаку: фільтруй за жанром та переглядай деталі.</p>
+        </div>
+
+        <div>
+            <h4>Навігація</h4>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Моя колекція</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div>
+            <h4>Контакти</h4>
+            <div class="socials">
+                <a class="social-link">Phone</a>
+                <a class="social-link">Mail</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+       const openButtons = document.querySelectorAll("[data-modal-open]");
+const closeButtons = document.querySelectorAll("[data-modal-close]");
+
+openButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        const modal = document.querySelector(`[data-modal="${btn.dataset.modalOpen}"]`);
+        modal.classList.add("active");
+    });
+});
+
+closeButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.closest(".backdrop").classList.remove("active");
+    });
+});
+
+document.querySelectorAll(".backdrop").forEach(backdrop => {
+    backdrop.addEventListener("click", e => {
+        if (e.target === backdrop) {
+            backdrop.classList.remove("active");
+        }
+    });
+});
+    </script>
+
+</body>
+
+</html>
